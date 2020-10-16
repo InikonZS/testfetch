@@ -1,0 +1,12 @@
+.item{
+  background-color: #ccc;
+  min-height: 100px;
+}
+
+.item_selected{
+  background-color: #f00;
+}
+
+.item_qwer{
+  background-color: #0f0;
+}
