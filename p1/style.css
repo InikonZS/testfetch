@@ -1,0 +1,26 @@
+.map{
+  display: flex;
+  position: relative;
+}
+
+.row{
+  display: flex;
+}
+
+.tile{
+  box-sizing: border-box;
+  border: solid 1px #fff;
+  background-color: #ccc;
+}
+
+.player {
+  background-color: #5f5;
+}
+
+.box {
+  background-color: #ff5;
+}
+
+.bullet {
+  background-color: #f55;
+}
