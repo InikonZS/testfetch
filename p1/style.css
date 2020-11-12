@@ -24,3 +24,15 @@
 .bullet {
   background-color: #f55;
 }
+
+.header {
+  height: 100px;
+  background-color: #fff3;
+}
+
+.pix{
+  width: 40px;
+  height: 40px;
+  background-color: #5f5; 
+  transition-duration: 500ms; 
+}
