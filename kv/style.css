@@ -19,6 +19,24 @@ body{
   color:#ccc;
 }
 
+.section{
+  background-color: #333;
+padding: 10px;
+    padding-top: 10px;
+padding-top: 20px;
+border-radius: 7px;
+}
+
+.section_expand{
+  width: 25px;
+height: 25px;
+background-color: #555;
+border-radius: 7px;
+margin-left: auto;
+margin-top: -15px;
+margin-bottom: 5px;
+}
+
 .pagebox_wrapper{
   width: 100%;
 }
