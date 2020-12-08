@@ -57,7 +57,7 @@ margin-bottom: 5px;
   background-color: var(--back-color);
   border-radius: var(--border-radius);
   border-bottom-left-radius: 0px;
-  overflow-y:auto;
+  /*overflow-y:auto;*/
 }
 
 .pagebox_marks{
@@ -79,4 +79,21 @@ margin-bottom: 5px;
 
 .pagebox_mark__active{
   border-top: solid var(--border-width) var(--back-color);
+}
+
+.list_wrapper{
+  width: 100%;
+  padding: 10px 0px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.list_item{
+  width: 100%;
+  padding: 2px 0px;
+  border-bottom: solid 1px #ccc2;
+}
+
+.list_item__selected{
+  background-color: rgb(80, 80, 190);
 }
