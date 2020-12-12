@@ -1,0 +1,16 @@
+#app{
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+#img{
+  width: 100%;
+  position: absolute;
+}
+
+#overlay{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}

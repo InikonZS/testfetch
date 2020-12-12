@@ -61,6 +61,11 @@ class RadioGroup extends Control{
     this.buttons[index].changeState(true);  
     this.onSelect && this.onSelect(index);
   }
+
+  hide(){
+    console.log('dfddgdsfdsfd');
+    super.hide();
+  }
 }
 
 

@@ -181,3 +181,8 @@ function render(deltaTime){
   ctx.clearRect(0,0, 1000,1000);
   renderList.forEach(it=>it.render(deltaTime));  
 }
+
+function getMapPosition(lon, lat){
+  let Yc = M * Rsr * (Math.PI/2 - Bm);
+  let a = Math.atan(W/(2*Yc));
+}

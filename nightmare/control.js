@@ -1,36 +1,5 @@
-class Observer{
-  constructor(){
-    this.listeners = [];
-  }
-
-  addListener(name, callback){
-    let id = {};
-    this.listeners.push({id, name, callback});
-    return id;
-  }
-  
-  addOnceListener(name, callback){
-    let id = {};
-    this.listeners.push({id, name, callback:()=>{
-      callback();
-      this.removeListener(id);
-    }});
-    return id;
-  }
-
-  removeListener(id){
-    this.listeners = this.listeners.filter(it=>it.id!=id);  
-  }
-  
-  dispath(name){
-    this.listeners.filter(it=>it.name==name).forEach(it=>it.callback());
-  }
-
-}
-
-class Control extends Observer {
+class Control {
   constructor(parentNode, tagName = 'div', className = '', content = '') {
-    super();
     const el = document.createElement(tagName);
     el.className = className;
     el.textContent = content;
@@ -62,7 +31,6 @@ class Toggle extends Control{
     }
     this.node.className = this.isToggled ? this.activeClass : this.inactiveClass;
     this.onChange && this.onChange(this.isToggled);
-    this.dispath('change');
     return this.isToggled; 
   }
 }

@@ -1,9 +1,12 @@
+
+
 class PageBox extends Control{
   constructor(parentNode){
     // передать обьект со стилям css
     super(parentNode, 'div', "pagebox_wrapper");
     this.itemWrapper = new Control(this.node, 'div', 'pagebox_main');
     this.items = [];
+    this.lists = [];
     this.pagination = new RadioGroup(this.node, 'pagebox_marks', 'pagebox_mark pagebox_mark__active', 'pagebox_mark');
     this.pagination.onSelect = (index)=>{
       this.items.forEach((it, i)=>it.node.style.display = (i!=index) ? 'none':'');// может цсс-класс-модификатор
@@ -21,6 +24,7 @@ class PageBox extends Control{
     }
 
     this.items.push(page);
+    this.lists.push(list);
     this.pagination.addButton(caption);
   }
   //можно селект прокинуть повыше и эвенты
